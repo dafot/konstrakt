@@ -54,10 +54,10 @@
     font-size: 1.1rem;
     letter-spacing: .3rem;
     text-transform: uppercase;
-    margin-bottom: 7.1rem;
 }
 .header__nav {
-    display: flex;    
+    display: flex;
+    border-bottom: 2px solid $grey-light;  
 }
 .nav {
     padding: 2.5rem 0;
@@ -83,5 +83,19 @@
     text-transform: uppercase;
     font-weight: 600;
     padding: 1rem 2rem;
-
+}
+@media(max-width: 692px) {
+    .nav__link{
+        padding: 1rem;
+    }
+}
+@media(max-width: 560px) {
+    html {
+        font-size: 8px;
+    }
+}
+@media(max-width: 470px) {
+    html {
+        font-size: 6px;
+    }
 }

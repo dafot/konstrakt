@@ -182,11 +182,11 @@ body {
   font-size: 1.1rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
-  margin-bottom: 7.1rem;
 }
 
 .header__nav {
   display: flex;
+  border-bottom: 2px solid #c4c4c4;
 }
 
 .nav {
@@ -216,4 +216,20 @@ body {
 }
 .nav__link:hover {
   color: #00a4e5;
+}
+
+@media (max-width: 692px) {
+  .nav__link {
+    padding: 1rem;
+  }
+}
+@media (max-width: 560px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 470px) {
+  html {
+    font-size: 6px;
+  }
 }/*# sourceMappingURL=style.css.map */
