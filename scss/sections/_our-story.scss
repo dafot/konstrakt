@@ -1,0 +1,72 @@
+.our-story {
+    padding: 4.8rem 0 12.7rem;
+}
+.our-story__container {
+}
+
+.our-story__title {
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+
+.our-story__body {
+    display: flex;
+    justify-content: space-between;    
+}
+.our-story__col {
+}
+.our-story__txt-wrapper {
+    max-width: 40.5rem;
+}
+.our-story__strong-txt {
+    font-size: 2rem;
+    line-height: 2.34rem;
+    letter-spacing: .02rem;
+    font-weight: 700;
+    
+    margin-bottom: 3rem;
+}
+.accent-color {
+    color: $accent-color;
+}
+.our-story__txt {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    letter-spacing: .2rem;    
+}
+.our-story__cards-list {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    gap: 2rem;
+}
+.our-story__card-item {
+}
+.our-story__card {
+    width: 14rem;
+    height: 22.4rem;
+    padding: 1.5rem 1.4rem;
+}
+.our-story__card-descr {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+    color:$light;
+    font-weight: 800;
+}
+@media(max-width: 930px) {
+    .our-story__body,
+    .our-story__cards-list {
+        flex-direction: column; 
+        align-items: center;
+        gap: 3rem;
+    }
+    .our-story__card {
+        width:40.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

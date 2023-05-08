@@ -1,0 +1,23 @@
+.section-title {
+    position: relative;
+    display: block;
+    min-width: 20rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: .23rem;
+    text-align: center;
+    text-transform: uppercase;
+    
+    &:after {
+        content: '';
+        display: inline-block;
+        background-color: $accent-color;
+        width: 5rem;
+        height: .2rem;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
