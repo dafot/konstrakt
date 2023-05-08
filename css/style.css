@@ -1,29 +1,36 @@
 @charset "UTF-8";
-/* =====BASE===== */
-/*Обнуление*/
+/* =====BASE===== */ /*Обнуление*/
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -34,7 +41,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -51,7 +60,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -67,7 +77,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
@@ -79,4 +94,34 @@ html {
   font-size: 10px;
 }
 
+.page {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 972px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* =====MIXINS===== */ /*=====connect the fonts=====*/
+/* =====FONTS===== */
+/* 
+@include font($font-family, $font, $font-weight, $font-style)
+*/
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue.woff2"), url("../fonts/BebasNeue.woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/* =====UTILITIES===== */
 /* ======SECTIONS====== *//*# sourceMappingURL=style.css.map */
