@@ -136,7 +136,6 @@ body {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0.23rem;
-  text-align: center;
   text-transform: uppercase;
 }
 .section-title:after {
@@ -146,9 +145,27 @@ body {
   width: 5rem;
   height: 0.2rem;
   position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.1rem 2.9rem;
+  background-color: #00a4e5;
+  min-width: 15rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+.btn:link, .btn:visited {
+  color: #ffffff;
+}
+
+.text {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.2rem;
 }
 
 /* =====UTILITIES===== */
@@ -263,6 +280,12 @@ body {
 .our-story__title {
   margin: 0 auto;
   margin-bottom: 8rem;
+  text-align: center;
+}
+.our-story__title:after {
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .our-story__body {
@@ -284,12 +307,6 @@ body {
 
 .accent-color {
   color: #00a4e5;
-}
-
-.our-story__txt {
-  font-size: 1.3rem;
-  line-height: 2.3rem;
-  letter-spacing: 0.2rem;
 }
 
 .our-story__cards-list {
@@ -326,5 +343,80 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+.our-capabilities {
+  padding-bottom: 11.4rem;
+}
+
+.our-capabities__top {
+  display: flex;
+  max-height: 4rem;
+}
+
+.our-capabilities__title {
+  margin-right: auto;
+}
+.our-capabilities__title::after {
+  bottom: 0;
+  left: 0;
+}
+
+.our-capabilities__descr {
+  font-size: 11px;
+  max-width: 40.5rem;
+  margin-right: 3.1rem;
+  letter-spacing: 0.02rem;
+}
+
+.our-capabilities__body {
+  padding-top: 7.8rem;
+}
+
+.our-capabilities__cards-list {
+  display: flex;
+  gap: 3rem;
+}
+
+.items__item {
+  width: 33.33%;
+}
+
+.items__card {
+  border: 1px solid #c4c4c4;
+  padding: 3.9rem 2.1rem;
+  height: 100%;
+}
+
+.items__img {
+  margin-bottom: 2.5rem;
+}
+
+.items__title {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.04rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+
+@media (max-width: 880px) {
+  .our-capabilities__cards-list {
+    flex-wrap: wrap;
+  }
+  .items__item {
+    flex-grow: 1;
+  }
+}
+@media (max-width: 550px) {
+  .our-capabilities__top {
+    margin-bottom: 2rem;
+  }
+  .our-capabilities__cards-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .items__item {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

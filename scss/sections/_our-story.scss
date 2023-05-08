@@ -7,6 +7,12 @@
 .our-story__title {
     margin: 0 auto;
     margin-bottom: 8rem;
+    text-align: center;
+    &:after {
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .our-story__body {
@@ -30,9 +36,7 @@
     color: $accent-color;
 }
 .our-story__txt {
-    font-size: 1.3rem;
-    line-height: 2.3rem;
-    letter-spacing: .2rem;    
+   
 }
 .our-story__cards-list {
     display: flex;
