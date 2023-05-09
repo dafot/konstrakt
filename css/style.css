@@ -419,4 +419,167 @@ body {
   .items__item {
     width: 100%;
   }
+}
+.want {
+  background-image: url("../img/want/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.want__body {
+  padding-top: 12rem;
+  padding-bottom: 21.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.want__title {
+  text-transform: none;
+  max-width: 35rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  margin-bottom: 3.5rem;
+}
+.want__title::first-letter {
+  text-transform: uppercase;
+}
+.want__title::after {
+  display: none;
+}
+
+.footer {
+  background-color: #141A20;
+  color: #ffffff;
+}
+.footer a:link,
+.footer a:visited {
+  color: #ffffff;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.signup__desr {
+  font-size: 2.2rem;
+  line-height: 100%;
+  letter-spacing: 0.09rem;
+  font-weight: 700;
+  margin-right: 7rem;
+}
+.signup__desr::first-letter {
+  text-transform: uppercase;
+}
+
+.signup__input {
+  height: 4rem;
+  min-width: 25rem;
+  padding: 1.1rem 1.6rem;
+}
+
+.signup__btn {
+  min-height: 4rem;
+  color: #ffffff;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 2fr 2fr;
+  grid-template-rows: 4.5rem minmax(15rem, 1fr) 10rem;
+}
+
+.footer__company {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.footer__company-title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.list-title {
+  text-transform: uppercase;
+}
+
+.footer__logo {
+  margin-bottom: 1.5rem;
+}
+
+.footer__company-descr {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+.footer__links-title {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.footer__links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-links-1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.links-list__link {
+  text-transform: uppercase;
+}
+
+.footer-links-2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.footer-links-3 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.footer__contacts {
+  grid-column: 5/6;
+  grid-row: 2/3;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.09rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.footer__contacts-title {
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+
+.footer__social {
+  grid-column: 6/7;
+  grid-row: 2/3;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.footer__descr {
+  grid-column: 2/6;
+  grid-row: 3/4;
+  align-self: end;
+  padding: 2.2rem 0;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .links-list__link {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+.want {
+  background-image: url("../img/want/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.want__container {
+}
+.container {
+}
+.want__body {
+    padding-top: 12rem;
+    padding-bottom: 21.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.want__title {
+    text-transform: none;
+    max-width: 35rem;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin-bottom: 3.5rem;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+    &::after{
+        display: none;
+    }
+}
+.section-title {
+}
+.want__btn {
+}
+.btn {
+}
